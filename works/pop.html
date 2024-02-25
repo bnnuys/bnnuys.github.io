@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Faustina&display=swap');
+  
+  .iframe-container {
+      overflow: hidden;
+      /* 16:9 aspect ratio */
+      padding-top: 56.25%;
+      position: relative;
+    }
+
+    .iframe-container iframe {
+      border: 0;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+
+  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colrana</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+
+  <body>
+    <div class="container">
+
+      <div class="header">
+        <h1>Luis Andrés Serrano</h1>
+        <div id="top">
+          <a href="/">home</a> - <a href="/about.html">about</a> - <a href="/works.html">works</a> - <a href="/cv.html">cv</a> - <a href="/contact.html">contact</a>
+        </div>
+        <br>
+          <br>
+      </div>
+
+      <div class="content">
+        <img src="/works/pop.jpg" width=50% class="center">
+        <h2>alternate pop dimension (2021)</h2>
+        <p>
+          Made for a sound composition class! An EP composed of single K-POP song samples.
+        </p>
+        <div class="iframe-container">
+          <iframe style="border: 0;"
+            src="https://bandcamp.com/EmbeddedPlayer/album=1174267397/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/"
+            seamless><a href="https://colrana.bandcamp.com/album/alternate-pop-dimension">alternate pop dimension by
+              colrana</a></iframe>
+        </div>
+        <br>
+        <a href="javascript:window.history.back();">Back</a>
+      </div>
+    </div>
+
+  </body>
+
+</html>

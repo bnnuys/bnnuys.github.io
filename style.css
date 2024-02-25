@@ -1,0 +1,79 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+body {
+  background-color: white;
+  color: black;
+  font-family: 'Faustina', serif;
+  font-size: 18px;
+  padding: 3%
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+}
+h2 {
+  font-size: 25px;
+}
+
+p {
+  text-indent: 50px;
+}
+
+a {
+  text-decoration: underline dotted;
+  color: #4965a2;
+}
+
+#top {
+  text-align: center;
+  font-size: 25px;
+}
+
+#cover {
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
+}
+
+#cover > a > img {
+  float: left;
+  border: 2px solid black;
+  width: 45%;
+  margin: 1.66%;
+}
+
+img.front {
+  max-width: 100%;
+  height: auto;
+}
+
+img.about {
+  max-width: 25%;
+  height: auto;
+  padding: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  img.about {
+    max-width: 50%;
+    height: auto;
+  }
+}
+
+.container {  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: min-content auto auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header header header"
+    "content content content"
+    "content content content";
+}
+
+.header { grid-area: header; }
+
+.content { grid-area: content; }
