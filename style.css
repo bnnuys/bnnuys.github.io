@@ -33,16 +33,22 @@ a {
 }
 
 #cover {
-  width: 80%;
-  height: 80%;
-  margin: 0 auto;
+  padding: 10px;
 }
 
 #cover > a > img {
-  float: inline-flex;
   border: 2px solid black;
-  width: 45%;
-  margin: 1.66%;
+  width: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+  #cover > a > img {
+    border: 2px solid black;
+    width: 100px;
+  }
+}
+
+.content { grid-area: content; 
 }
 
 img.front {
@@ -75,5 +81,3 @@ img.about {
 }
 
 .header { grid-area: header; }
-
-.content { grid-area: content; }
